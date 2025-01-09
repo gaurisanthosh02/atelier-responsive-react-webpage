@@ -4,7 +4,7 @@ import './Home.css'
 import homeImage from './assets/homeImage.jpg'
 export const Home = () => {
   return (
-    <div className="container-fluid text-center border rounded">
+    <div className="mainDiv container-fluid text-center border rounded">
 
         {/* navbar */}
         <Navbar collapseOnSelect expand="lg">
@@ -29,12 +29,10 @@ export const Home = () => {
         <h1 className="text-danger display-1 fw-bold text-center">MI ATELIER.</h1>
 
         {/* home image, content and button */}
-        <div className="container-fluid position-relative">
-        <Image  src={homeImage} fluid/>
-          <div className="text-danger position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100">
-            <p className="overimageContent ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis excepturi tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum maiores rerum!</p>
+        <div className="container-fluid d-flex justify-content-center position-relative">
+            <Image  src={homeImage} fluid/>
+            <p className="overimageContent text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis excepturi tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum maiores rerum!</p>
             <button className="homeButton">Book a Call</button>
-          </div>
         </div>
     </div>
   )

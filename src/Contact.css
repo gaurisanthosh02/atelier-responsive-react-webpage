@@ -1,0 +1,47 @@
+.contactButton{
+    width: 500px;
+    padding: 10px;
+    /* position: absolute; */
+    border-radius: 30px;
+    border: solid 1px white;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    margin: 10px 0px;
+}
+
+.formCol{
+    /* margin: 10px 0px; */
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFormTitle{
+    text-align: center;
+    background-color: transparent;
+    margin-top: 50px;
+    color: white;
+}
+
+form, .customGroup{
+    background-color: transparent;
+}
+
+.customInput{
+    /* margin: 10px 0px; */
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    border-bottom: solid white;
+    outline: none;
+    width: 500px;
+}
+
+.customInput::placeholder{
+    color: white;
+}

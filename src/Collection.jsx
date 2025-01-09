@@ -8,37 +8,41 @@ import './Collection.css'
 const Collection = () => {
   return (
     <>
-        <div >
+        <div id="Collection">
             <hr className='mx-auto border border-danger w-100'/>
             <h1 className="display-1 text-center text-danger fw-bolder">COLLECTIONS.</h1>
             <hr className='mx-auto border border-danger w-100'/>
-            <div>
+            <div className="d-flex flex-column justify-content-sm-center">
             <Container fluid>
-                <Row className="g-4">
+                <Row className="g-4 d-flex flex-md-row">
                     <Col sm={12} md={6}>
-                    <div>
+                    <div className="d-flex justify-content-center position-relative">
                         <Image src={collect1} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
-                        <button >See All</button>
+                        <h3 className="collectName">SPRING.</h3>
+                        <button className="collectButton">See All</button>
                     </div>
                     </Col>
                     <Col sm={12} md={6}>
-                        <div>
-                        <Image src={collect2} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
-                        <button className="collectButton">See All</button>
+                        <div className="d-flex justify-content-center position-relative">
+                            <Image src={collect2} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
+                            <h3 className="collectName">WEDDING.</h3>
+                            <button className="collectButton">See All</button>
                         </div>
                     </Col>
                 </Row>
                 <Row className="g-4">
                     <Col sm={12} md={6}>
-                        <div>
+                        <div className="d-flex justify-content-center position-relative">
                             <Image src={collect3} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
-                            <button>See All</button>
+                            <h3 className="collectName">CASUAL.</h3>
+                            <button className="collectButton">See All</button>
                         </div>
                     </Col>
                     <Col sm={12} md={6}>
-                        <div>
-                        <Image src={collect4} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
-                        <button>See All</button>
+                        <div className="d-flex justify-content-center position-relative">
+                            <Image src={collect4} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
+                            <h3 className="collectName">WINTER.</h3>
+                            <button className="collectButton">See All</button>
                         </div>
                     </Col>
                 </Row>

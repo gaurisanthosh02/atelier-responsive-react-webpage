@@ -1,15 +1,28 @@
 .collectButton{
-    width: 200px;
-    padding: 10px;
     position: absolute;
+    width: 150px;
+    padding: 10px;
     border-radius: 30px;
     border: solid 1px transparent;
     color: red;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 
-    top: -400px;  
-    left: 560px;  
+    bottom: 25%;  
+    left: 50%;  
+    transform: translateX(-50%);
+}
+
+.collectName{
+    position: absolute;
+    color: red;
+    font-weight: 600;
+    font-size: 35px;
+    background-color: transparent;
+    
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
 }
