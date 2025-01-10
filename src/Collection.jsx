@@ -8,7 +8,7 @@ import './Collection.css'
 const Collection = () => {
   return (
     <>
-        <div id="Collection">
+        <div id="Collection" className="mt-5">
             <hr className='mx-auto border border-danger w-100'/>
             <h1 className="display-1 text-center text-danger fw-bolder">COLLECTIONS.</h1>
             <hr className='mx-auto border border-danger w-100'/>
@@ -16,11 +16,11 @@ const Collection = () => {
             <Container fluid>
                 <Row className="g-4 d-flex flex-md-row">
                     <Col sm={12} md={6}>
-                    <div className="d-flex justify-content-center position-relative">
-                        <Image src={collect1} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
-                        <h3 className="collectName">SPRING.</h3>
-                        <button className="collectButton">See All</button>
-                    </div>
+                        <div className="d-flex justify-content-center position-relative">
+                            <Image src={collect1} style={{width:'380px', height:'500px', border:'solid white 5px'}} fluid />
+                            <h3 className="collectName">SPRING.</h3>
+                            <button className="collectButton">See All</button>
+                        </div>
                     </Col>
                     <Col sm={12} md={6}>
                         <div className="d-flex justify-content-center position-relative">

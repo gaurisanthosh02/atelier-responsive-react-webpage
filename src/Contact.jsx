@@ -11,26 +11,30 @@ const Contact = () => {
             <hr className='mx-auto border border-danger w-75'/>
             <div>
                 <Container fluid >
-                    <Row className="d-flex flex-md-row justify-content-center g=0 mb-5" >
+                    <Row className="d-flex flex-md-row mb-5" >
                         {/* form */}
                         <Col className="formCol bg-danger" sm={12} md={9}>
-                            <h2 className="contactFormTitle mb-5">BOOK AN ONSITE FITTING</h2>
-                            <form>
-                                <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
-                                    <Form.Control className="customInput" type="text" placeholder="name" />
-                                </Form.Group>
-                                <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
-                                    <Form.Control className="customInput" type="text" placeholder="phone" />
-                                </Form.Group>
-                                <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
-                                    <Form.Control className="customInput" type="text" placeholder="address" />
-                                </Form.Group>
-                                <button className="contactButton ">BOOK A FITTING</button>
-                            </form>
+                           <div className="bg-danger">
+                                <h2 className="contactFormTitle mb-5">BOOK AN ONSITE FITTING</h2>
+                                <form>
+                                    <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
+                                        <Form.Control className="customInput" type="text" placeholder="name" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
+                                        <Form.Control className="customInput" type="text" placeholder="phone" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3 customGroup mb-5" controlId="formBasicEmail">
+                                        <Form.Control className="customInput" type="text" placeholder="address" />
+                                    </Form.Group>
+                                    <button className="contactButton mb-4">BOOK A FITTING</button>
+                                </form>
+                           </div>
                         </Col>
                         {/* image */}
-                        <Col sm={12} md={3} className="d-flex justify-content-center align-item-center">   
-                            <Image style={{Height:'480px'}} src={contactImage} fluid/>
+                        <Col sm={12} md={3}>   
+                            <div className="d-flex justify-content-center">
+                                <Image style={{height:'500px'}}  src={contactImage} fluid/>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

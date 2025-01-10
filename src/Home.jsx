@@ -14,8 +14,7 @@ export const Home = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto d-flex justify-content-between align-items-center">
                 <Nav.Link className="text-danger fw-bold" href="#About">About</Nav.Link>
-                <Nav.Link className="text-danger fw-bold" href="#Service">Service</Nav.Link>
-                <Nav.Link className="text-danger fw-bold" href="#Lookbook">Process</Nav.Link>
+                <Nav.Link className="text-danger fw-bold" href="#Process">Process</Nav.Link>
                 <Nav.Link className="text-danger fw-bold" href="#Collection">Collection</Nav.Link>
               </Nav>
               <Nav>
@@ -29,9 +28,9 @@ export const Home = () => {
         <h1 className="text-danger display-1 fw-bold text-center">MI ATELIER.</h1>
 
         {/* home image, content and button */}
-        <div className="container-fluid d-flex justify-content-center position-relative">
+        <div className="container-fluid d-flex flex-md-row flex-column justify-content-center align-items-center position-relative">
             <Image  src={homeImage} fluid/>
-            <p className="overimageContent text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis excepturi tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum maiores rerum!</p>
+              <p className="overimageContent text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus corporis excepturi tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum maiores rerum!</p>
             <button className="homeButton">Book a Call</button>
         </div>
     </div>
